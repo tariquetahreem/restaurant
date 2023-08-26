@@ -1,0 +1,235 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: azure;
+  scroll-behavior: smooth;
+}
+
+.main {
+  display: flex;
+}
+body {
+  background-color: black;
+}
+
+.left {
+  width: 25vw;
+  background-color: black;
+}
+
+.top {
+  width: 25vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.top > p:nth-child(2) {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 600;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+
+.top > p:nth-child(3) {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+  margin-top: 0.3rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+
+.line {
+  width: 25vw;
+  border: 1px solid #1c2025;
+  margin-top: 2rem;
+}
+
+.quicklinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 0.6rem;
+  cursor: pointer;
+}
+
+.quicklinks > p {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 600;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.list {
+  margin-left: 4.5rem;
+}
+.list > ol {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 400;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.list > ol > li {
+  cursor: pointer;
+}
+
+.list > ol > li:hover {
+  color: red;
+  font-weight: 800;
+}
+
+/* RIGHT */
+.right {
+  background-color: #13181d;
+  height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.right::-webkit-scrollbar {
+  display: none;
+}
+
+.rtop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75vw;
+  height: 83px;
+  padding-right: 1.5rem;
+}
+.inputbar {
+  width: 500px;
+  height: 46px;
+  border-radius: 5px;
+  margin-left: 3rem;
+  background-color: #272a30;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1rem;
+}
+
+input[type="text"] {
+  font-size: 1.1rem;
+}
+
+input::placeholder {
+  font-size: 1rem;
+}
+
+.inputbar > img {
+  margin-left: 0.5rem;
+}
+
+.inputbar > input {
+  background: transparent;
+  border: none;
+  height: 2.5rem;
+  width: 47.5rem;
+  outline: none;
+}
+
+button {
+  width: 100px;
+  height: 44px;
+  background-color: red;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.profile {
+  width: 58px;
+  height: 58px;
+}
+
+.slider > img {
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+
+/* Items */
+
+.itemlist {
+  width: 428px;
+  border-radius: 10px;
+  margin-left: 2.3rem;
+  margin-top: 1.3rem;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  width: 25.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+  background-color: #272a30;
+  padding-top: 0.6rem;
+  border-radius: 10px;
+}
+
+.card > img {
+  width: 24.5rem;
+  height: 13.5rem;
+  border-radius: 10px;
+  margin-left: 0.8rem;
+  margin-right: 0.8rem;
+}
+
+.value {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10rem;
+  width: 24.5rem;
+  padding-top: 0.8rem;
+  padding-left: 0.9rem;
+  padding-right: 1.2rem;
+}
+
+.detail > p:nth-child(1) {
+  margin-bottom: 0.3rem;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.detail > p:nth-child(2) {
+  margin-bottom: 0.3rem;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.btn > img {
+  width: 40px;
+  height: 40px;
+  background-color: #272a30;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.menu > p {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
